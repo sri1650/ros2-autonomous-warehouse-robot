@@ -1,0 +1,7 @@
+builtin_interfaces/Time stamp
+bool safe_to_move
+bool emergency_stop
+bool command_timed_out
+bool obstacle_stop
+float32 nearest_obstacle_m
+string reason

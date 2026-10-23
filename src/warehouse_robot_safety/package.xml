@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>warehouse_robot_safety</name>
+  <version>0.1.0</version>
+  <description>Fail-safe command supervision and obstacle/e-stop interlocks.</description>
+  <maintainer email="maintainer@example.com">Warehouse Robot Maintainer</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>warehouse_robot_interfaces</depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+</package>

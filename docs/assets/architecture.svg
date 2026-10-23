@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">ROS 2 autonomous warehouse robot architecture</title>
+  <desc id="desc">Mission management, Nav2, localisation, safety supervision, diagnostics and simulated hardware layers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071522"/><stop offset="1" stop-color="#102a43"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity=".25"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6ee7f9"/></marker>
+    <style>
+      .title{font:700 30px system-ui,sans-serif;fill:#f8fafc}.subtitle{font:400 15px system-ui,sans-serif;fill:#a8c3d8}
+      .box{rx:16;stroke-width:2;filter:url(#shadow)}.label{font:700 17px system-ui,sans-serif;fill:#f8fafc}.small{font:400 13px system-ui,sans-serif;fill:#d8e7f2}
+      .edge{fill:none;stroke:#6ee7f9;stroke-width:3;marker-end:url(#arrow)}.dash{stroke-dasharray:8 7}
+      .section{font:700 13px system-ui,sans-serif;letter-spacing:2px;fill:#7dd3fc}
+    </style>
+  </defs>
+  <rect width="1200" height="620" rx="24" fill="url(#bg)"/>
+  <text x="55" y="58" class="title">Autonomous Warehouse Robot</text>
+  <text x="55" y="84" class="subtitle">ROS 2 Jazzy · Nav2 · Gazebo Harmonic · C++ &amp; Python</text>
+
+  <text x="55" y="128" class="section">MISSION &amp; AUTONOMY</text>
+  <rect class="box" x="55" y="148" width="230" height="92" fill="#153e5c" stroke="#38bdf8"/>
+  <text x="78" y="183" class="label">Mission Manager</text><text x="78" y="210" class="small">Actions · sequencing · cancel</text>
+  <rect class="box" x="365" y="148" width="230" height="92" fill="#153e5c" stroke="#38bdf8"/>
+  <text x="388" y="183" class="label">Navigation Manager</text><text x="388" y="210" class="small">Goal validation · status</text>
+  <rect class="box" x="675" y="148" width="230" height="92" fill="#173f4f" stroke="#2dd4bf"/>
+  <text x="698" y="183" class="label">Nav2</text><text x="698" y="210" class="small">Plan · control · recovery</text>
+  <path class="edge" d="M285 194 H365"/><path class="edge" d="M595 194 H675"/>
+
+  <text x="55" y="300" class="section">STATE ESTIMATION &amp; SUPERVISION</text>
+  <rect class="box" x="55" y="320" width="230" height="92" fill="#29365c" stroke="#818cf8"/>
+  <text x="78" y="355" class="label">Sensor Fusion</text><text x="78" y="382" class="small">Wheel odom · IMU · EKF</text>
+  <rect class="box" x="365" y="320" width="230" height="92" fill="#4b2b46" stroke="#f472b6"/>
+  <text x="388" y="355" class="label">Safety Supervisor</text><text x="388" y="382" class="small">E-stop · LiDAR · watchdog</text>
+  <rect class="box" x="675" y="320" width="230" height="92" fill="#443b20" stroke="#fbbf24"/>
+  <text x="698" y="355" class="label">Diagnostics</text><text x="698" y="382" class="small">Health · heartbeat · faults</text>
+  <path class="edge" d="M170 320 V266 Q170 255 182 255 H762 Q790 255 790 240"/>
+  <path class="edge" d="M790 240 V282 Q790 294 778 294 H492 Q480 294 480 320"/>
+  <path class="edge dash" d="M595 366 H675"/>
+
+  <text x="55" y="472" class="section">PLATFORM</text>
+  <rect class="box" x="55" y="492" width="230" height="82" fill="#244337" stroke="#4ade80"/>
+  <text x="78" y="526" class="label">LiDAR &amp; IMU</text><text x="78" y="551" class="small">Gazebo / real sensor topics</text>
+  <rect class="box" x="365" y="492" width="230" height="82" fill="#244337" stroke="#4ade80"/>
+  <text x="388" y="526" class="label">ros2_control</text><text x="388" y="551" class="small">Differential drive boundary</text>
+  <rect class="box" x="675" y="492" width="230" height="82" fill="#244337" stroke="#4ade80"/>
+  <text x="698" y="526" class="label">Gazebo Warehouse</text><text x="698" y="551" class="small">Robot · racks · sensor physics</text>
+  <path class="edge" d="M170 492 V412"/><path class="edge" d="M480 412 V492"/><path class="edge dash" d="M675 533 H595"/>
+
+  <rect x="955" y="148" width="190" height="426" rx="18" fill="#0a1d2c" stroke="#30506a"/>
+  <text x="980" y="183" class="section">VALIDATION</text>
+  <circle cx="982" cy="226" r="7" fill="#4ade80"/><text x="1001" y="232" class="small">Logic implemented</text>
+  <circle cx="982" cy="269" r="7" fill="#4ade80"/><text x="1001" y="275" class="small">Unit tests included</text>
+  <circle cx="982" cy="312" r="7" fill="#fbbf24"/><text x="1001" y="318" class="small">Sim configured</text>
+  <circle cx="982" cy="355" r="7" fill="#f87171"/><text x="1001" y="361" class="small">Hardware untested</text>
+  <path d="M980 407 H1120" stroke="#30506a"/>
+  <text x="980" y="447" class="small">Software interlocks are</text><text x="980" y="469" class="small">not safety-rated.</text>
+  <text x="980" y="518" class="small">See verification.md for</text><text x="980" y="540" class="small">acceptance criteria.</text>
+</svg>

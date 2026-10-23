@@ -1,0 +1,19 @@
+{
+  "name": "ROS 2 Autonomous Warehouse Robot",
+  "build": {"dockerfile": "../Dockerfile", "context": ".."},
+  "workspaceFolder": "/workspace",
+  "runArgs": ["--network=host", "--ipc=host"],
+  "remoteUser": "ros",
+  "containerEnv": {"ROS_DOMAIN_ID": "42", "RCUTILS_COLORIZED_OUTPUT": "1"},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-iot.vscode-ros",
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+  "postCreateCommand": "bash -lc 'source /opt/ros/jazzy/setup.bash && rosdep install --from-paths src --ignore-src -r -y && colcon build --symlink-install'"
+}

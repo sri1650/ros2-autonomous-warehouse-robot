@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>warehouse_robot_navigation</name>
+  <version>0.1.0</version>
+  <description>Application-facing adapter for the Nav2 navigation action.</description>
+  <maintainer email="maintainer@example.com">Warehouse Robot Maintainer</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>nav2_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+</package>
