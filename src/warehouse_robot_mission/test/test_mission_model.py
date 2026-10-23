@@ -1,5 +1,4 @@
 import pytest
-
 from warehouse_robot_mission.model import MissionProgress, MissionState
 
 
