@@ -77,7 +77,7 @@ private:
     safe_command_publisher_->publish(safe_command);
 
     warehouse_robot_interfaces::msg::SafetyState state;
-    state.stamp = now().to_msg();
+    state.stamp = now();
     state.safe_to_move = output.safe_to_move;
     state.emergency_stop = emergency_stop_;
     state.command_timed_out = stale;
