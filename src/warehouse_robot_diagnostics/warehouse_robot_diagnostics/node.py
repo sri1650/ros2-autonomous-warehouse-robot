@@ -1,9 +1,10 @@
 """Aggregates application heartbeats and safety state into /diagnostics."""
 
-from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus, KeyValue
 import rclpy
+from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus, KeyValue
 from rclpy.node import Node
 from std_msgs.msg import String
+
 from warehouse_robot_interfaces.msg import SafetyState
 
 

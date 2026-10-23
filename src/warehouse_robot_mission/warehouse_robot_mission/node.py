@@ -1,15 +1,16 @@
 """ExecuteMission action server coordinating sequential navigation goals."""
 
-from action_msgs.msg import GoalStatus
 import rclpy
+from action_msgs.msg import GoalStatus
 from geometry_msgs.msg import PoseStamped
 from rclpy.action import ActionClient, ActionServer, CancelResponse, GoalResponse
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.node import Node
 from std_msgs.msg import String
+
 from warehouse_robot_interfaces.action import ExecuteMission
 
-from .model import MissionProgress, MissionState
+from .model import MissionProgress
 
 try:
     from nav2_msgs.action import NavigateToPose

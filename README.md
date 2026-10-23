@@ -49,7 +49,7 @@ See [docs/architecture.md](docs/architecture.md) for node boundaries, topics, ac
 | Package | Language | Responsibility |
 |---|---|---|
 | `warehouse_robot_interfaces` | ROS IDL | Mission action and safety-state message contracts |
-| `warehouse_robot_mission` | Python | Mission parsing, queueing, execution, cancellation |
+| `warehouse_robot_mission` | Python | Mission validation, waypoint execution, cancellation |
 | `warehouse_robot_navigation` | C++ | Nav2 action adapter and navigation status |
 | `warehouse_robot_safety` | C++ | Velocity watchdog, obstacle stop, e-stop interlock |
 | `warehouse_robot_diagnostics` | Python | System health aggregation and heartbeat monitoring |
